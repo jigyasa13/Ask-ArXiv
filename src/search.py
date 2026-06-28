@@ -44,7 +44,7 @@ def build_vector_index(chunks):
     print("⏳ Building vector index... (this takes 1-2 mins first time)")
 
     # Load a pre-trained model that converts text to vectors
-    model = SentenceTransformer("all-MiniLM-L6-v2")
+    model = SentenceTransformer("../models/cs-embedding-model")
 
     # Convert all chunks to vectors
     texts = [chunk["chunk_text"] for chunk in chunks]
